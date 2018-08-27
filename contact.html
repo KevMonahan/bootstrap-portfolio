@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact | Kevin Monahan</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -25,47 +26,57 @@
 
   <div id="main-container" class="container">
     <div id="row">
-      <div="col-md-1"></div>
-    <div="col-md-10">
-      <section class="main-section row">
-        <div class="col-md-12">
-          <h1>Contact</h1>
-        </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <section class="main-section row">
+          <div class="col-md-12">
+            <h1>Contact Me!</h1>
+          </div>
 
-        <form id="contact-form" style="width: 100%">
+          <FORM action="mailto:kevinmonahan0313@gmail.com" method="post" enctype="text/plain" class="col-md-12">
+            <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="4" WIDTH="90%">
+              <TR>
+                <TD width="30%">
+                  <DIV align="right">
+                    <B>Name:</B>
+                  </DIV>
+                </TD>
+                <TD width="70%">
+                  <INPUT type="text" name="name" size="20">
+                </TD>
+              </TR>
+              <TR>
+                <TD>
+                  <DIV align="right"><B>Email:</B></DIV>
+                </TD>
+                <TD>
+                  <INPUT type="text" name="email" style="width: 100%">
+                </TD>
+              </TR>
+              <TR>
+                <TD>
+                  <DIV align="right">
+                    <B>Comment:</B>
+                  </DIV>
+                </TD>
+                <TD>
+                  <TEXTAREA name="comment" cols="30" wrap="virtual" rows="4" placeholder="Submit button will ">
+            </TEXTAREA>
+                </TD>
+              </TR>
+              <TR>
+                <TD>&nbsp;</TD>
+                <TD>
+                  <INPUT type="submit" name="submit" value="Submit" class="btn btn-success">
+                  <INPUT type="reset" name="reset" value="Reset" class="btn btn-danger">
+                </TD>
+              </TR>
+            </TABLE>
+          </FORM>
 
-          <ul>
-            <div class="row">
-              <div class="form-group col-md-12">
-                <li>
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-                </li>
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-md-12">
-                <li>
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                </li>
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-md-12">
-                <li>
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" required="required"></textarea>
-                </li>
-              </div>
-            </div>
-          </ul>
-          <input type="submit">
-        </form>
-
-      </section>
-  </div>
-</div>
+        </section>
+      </div>
+    </div>
   </div>
 
   <footer>
